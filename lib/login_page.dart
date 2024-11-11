@@ -19,6 +19,11 @@ Duration get lodingTime => const Duration(milliseconds: 2000);
         return Future.delayed(lodingTime).then((value)=> null);
 
   }
+  Future<String?> _signupUser(SignupData data){
+        return Future.delayed(lodingTime).then((value)=> null);
+
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +31,7 @@ Duration get lodingTime => const Duration(milliseconds: 2000);
       body: FlutterLogin(
         onLogin: _authUser,
         onRecoverPassword: _recoverPassword,
+        onSignup: _signupUser,
       ),
     );
   }

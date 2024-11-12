@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 
@@ -23,7 +22,6 @@ Duration get lodingTime => const Duration(milliseconds: 2000);
         return Future.delayed(lodingTime).then((value)=> null);
 
   }
-
 
   @override
   Widget build(BuildContext context) {
